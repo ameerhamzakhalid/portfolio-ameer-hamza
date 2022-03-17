@@ -3,8 +3,11 @@ layout: default
 ---
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Microverse
+# Portfolio Microverse
 
+> Professional Portfolio using HTML, CSS
+
+### Check out in this [link](https://github.com/ameerhamzakhalid/portfolio-ameer-hamza)
 
 ## Built With
 
@@ -37,7 +40,7 @@ For copying and running follow the steps below.
 
 Contributions, issues, and feature requests are welcomed!
 
-Feel free to check the [issues page](https://github.com/ameerhamzakhalid/portfolio-ameer-hamza).
+Feel free to check the [issues page](https://github.com/ameerhamzakhalid/portfolio-ameer-hamza/issues).
 
 ## Show your support
 
