@@ -312,8 +312,11 @@ button:active {
 .categorie-tags {
   list-style: none;
   padding: 0;
-  display: flex;
   justify-content: space-around;
+}
+.html{
+  float: left;
+  margin: 0.5px;
 }
 
 .card-work > .card-tags > li {
