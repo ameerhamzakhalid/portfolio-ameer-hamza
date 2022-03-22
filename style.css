@@ -642,3 +642,11 @@ footer::after {
   background: #172b4d;
   border-radius: 8px;
 }
+
+.social-media-footer {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+}
