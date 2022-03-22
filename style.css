@@ -37,6 +37,17 @@ h2 {
   margin-bottom: 0;
 }
 
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #172b4d;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 span {
   color: var(--color-primary);
 }
@@ -312,11 +323,8 @@ button:active {
 .categorie-tags {
   list-style: none;
   padding: 0;
+  display: flex;
   justify-content: space-around;
-}
-.html{
-  float: left;
-  margin: 0.5px;
 }
 
 .card-work > .card-tags > li {
@@ -580,4 +588,50 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: url(img/illust-contact.svg) no-repeat 100% 90%;
+  padding: 2em 5em;
+}
+
+.link-mail {
+  color: #42526e;
+}
+
+input,
+textarea {
+  width: 327px;
+  padding: 1em;
+  margin: 1em 0;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #091e42;
+}
+
+input:valid,
+textarea:valid {
+  border: 1px solid #60c095;
+  background: #fff;
+}
+
+footer::after {
+  content: '';
+  height: 4px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+  background: #172b4d;
+  border-radius: 8px;
 }
