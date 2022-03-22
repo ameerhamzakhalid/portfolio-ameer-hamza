@@ -87,7 +87,7 @@ button {
 
 button:hover {
   box-shadow: 0 8px 16px rgba(27, 221, 140, 0.24);
-  background: #36B37F;
+  background: #36b37f;
 }
 
 button:active {
@@ -137,7 +137,8 @@ button:active {
 }
 
 .menu-btn,
-.header-nav-mobile > button {  background-color: white;
+.header-nav-mobile > button {
+  background-color: white;
 }
 
 .header-nav-mobile > button {
@@ -641,4 +642,3 @@ footer::after {
   background: #172b4d;
   border-radius: 8px;
 }
-
