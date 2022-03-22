@@ -86,7 +86,8 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(27, 221, 140, 0.24);
+  background: #36B37F;
 }
 
 button:active {
@@ -136,8 +137,7 @@ button:active {
 }
 
 .menu-btn,
-.header-nav-mobile > button {
-  background-color: white;
+.header-nav-mobile > button {  background-color: white;
 }
 
 .header-nav-mobile > button {
@@ -190,7 +190,7 @@ button:active {
 }
 
 .headline {
-  background: #fff url(./img/head-mob.svg) no-repeat;
+  background: #fff url(img/illust-mobile.svg) no-repeat;
   background-size: 100%;
   overflow: hidden;
 }
@@ -251,9 +251,15 @@ button:active {
   }
 
   .headline {
-    background: #fff url(./img/head-desk.svg) no-repeat;
+    background: #fff url(img/head-desk.svg) no-repeat;
     background-size: 100%;
     padding-bottom: 8em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headline {
+    padding-bottom: 15em;
   }
 }
 
@@ -635,3 +641,4 @@ footer::after {
   background: #172b4d;
   border-radius: 8px;
 }
+
