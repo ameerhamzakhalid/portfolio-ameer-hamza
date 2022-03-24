@@ -40,9 +40,9 @@ h2 {
 h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 40px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
   color: #172b4d;
   margin-top: 0;
   margin-bottom: 0;
@@ -222,7 +222,7 @@ button:active {
   width: 170px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .header-nav-phone {
     display: none;
   }
@@ -258,13 +258,7 @@ button:active {
   }
 }
 
-@media (min-width: 1024px) {
-  .headline {
-    padding-bottom: 15em;
-  }
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .headline {
     padding-bottom: 15em;
   }
@@ -335,7 +329,7 @@ button:active {
 }
 
 .card-work > .card-tags > li {
-  background: lightgray;
+  background: #ebf0ee;
   font-size: 12px;
   padding: 0.5em;
   margin: 0 0.5em;
@@ -443,7 +437,7 @@ button:active {
   margin-left: 1.3em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .works {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px repeat(3, 1fr);
@@ -461,7 +455,7 @@ button:active {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 768px) {
   .tag-mobile {
     background: #ebf0ee;
     font-family: Inter, sans-serif;
@@ -516,7 +510,7 @@ button:active {
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 768px) {
   .works {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px repeat(2, 1fr);
@@ -597,6 +591,21 @@ button:active {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .about-myself {
+    background: url(img/abt-desk-left-img.svg) no-repeat 0% 20%, url(img/abt-desk-right-img.svg) no-repeat 100% 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .categorie-about-myself {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+}
+
 .footer-container {
   margin-top: 2em;
   display: flex;
@@ -608,8 +617,59 @@ button:active {
   padding: 2em 5em;
 }
 
+form {
+  margin-top: 2em;
+}
+
+.input-name {
+  display: block;
+}
+
+.input-full-name {
+  display: none;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media > ul > li > a {
+  text-decoration: none;
+  color: #42526e;
+  font-size: 20px;
+  margin-top: 1.5em;
+}
+
 .link-mail {
   color: #42526e;
+}
+
+.form-fields {
+  list-style: none;
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.input-email-li {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+}
+
+.submit-button > small {
+  padding: 0;
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: left;
 }
 
 input,
@@ -643,10 +703,73 @@ footer::after {
   border-radius: 8px;
 }
 
-.social-media-footer {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  width: 170px;
+@media (min-width: 768px) {
+  html,
+  body {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  footer > a {
+    display: none;
+  }
+
+  footer::after {
+    content: none;
+  }
+
+  .footer-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: url(img/illust1-desk-cntct.svg) no-repeat 0% 90%, url(img/illust2-desk-cntct.svg) no-repeat 30% 90%, url(img/illust3-desk-cntct.svg) no-repeat 100% 90%;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .input-name {
+    display: none;
+  }
+
+  .input-full-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .footer-container > .social-media {
+    margin-top: 18em;
+  }
+
+  .input-full-name,
+  .input-email,
+  textarea {
+    min-width: 327px;
+    width: calc(95vw - 684px);
+  }
+
+  textarea {
+    height: 114px;
+  }
+
+  .input-full-name input {
+    max-width: 48%;
+    min-width: 48%;
+    width: inherit;
+  }
+
+  .submit-button {
+    align-self: flex-start;
+  }
+
+  .social-media-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 170px;
+  }
 }
