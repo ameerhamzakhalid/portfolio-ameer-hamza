@@ -144,6 +144,7 @@ li {
     padding: 0;
     padding-top: 1em;
     margin: 0;
+    transition: all 0.5s ease-out;
   }
 
   .header-nav-desktop li {
