@@ -46,6 +46,7 @@ button {
   padding: 1em 1.5em;
   color: white;
   border-radius: 3px;
+  transition: all 0.5s ease-out;
 }
 
 button:hover {
@@ -466,5 +467,6 @@ footer::after {
 
   .submit-button {
     align-self: flex-start;
+    transition: all 0.5s ease-out;
   }
 }
