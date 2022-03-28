@@ -14,18 +14,20 @@ layout: default
 -HTML
 -CSS
 
+## Live Demo (if available)
 
+[Live Demo Link](https://ameerhamzakhalid.github.io/portfolio-ameer-hamza/)
 
 ## Getting Started
 
 
 For copying and running follow the steps below.
-
+- Clone the repository by excecuting the git clone ```https://github.com/ameerhamzakhalid/portfolio-ameer-hamza.git``` from the terminal.
 ### Prerequisites
   - Git installed
 
 
-  - open hello.html
+  - open index.html
 
 ## Authors
 
