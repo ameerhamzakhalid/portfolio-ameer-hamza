@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 2em;
+
   --color-primary: #227452;
 }
 
@@ -26,7 +27,7 @@ h1 {
 }
 
 span {
-  color:  var(--color-primary);
+  color: var(--color-primary);
 }
 
 img {
@@ -40,7 +41,7 @@ button {
   border: none;
   width: fit-content;
   align-self: center;
-  background:  var(--color-primary);
+  background: var(--color-primary);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
@@ -310,7 +311,7 @@ li {
 
 .categorie-tags li {
   background: white;
-  color:  var(--color-primary);
+  color: var(--color-primary);
   font-size: 12px;
   padding: 1em 0.5em;
   margin: 1em 0.5em;
