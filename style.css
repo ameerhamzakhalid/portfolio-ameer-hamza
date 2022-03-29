@@ -5,6 +5,8 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 2em;
+
+  --color-primary: #227452;
 }
 
 body {
@@ -25,7 +27,7 @@ h1 {
 }
 
 span {
-  color: #36b37f;
+  color: var(--color-primary);
 }
 
 img {
@@ -39,7 +41,7 @@ button {
   border: none;
   width: fit-content;
   align-self: center;
-  background: #36b37f;
+  background: var(--color-primary);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 2px;
@@ -144,7 +146,6 @@ li {
     padding: 0;
     padding-top: 1em;
     margin: 0;
-    transition: all 0.5s ease-out;
   }
 
   .header-nav-desktop li {
@@ -192,7 +193,7 @@ li {
   position: relative;
   top: 20px;
   z-index: -1;
-  background: #36b37e;
+  background: var(--color-primary);
   border-radius: 8px;
 }
 
@@ -310,7 +311,7 @@ li {
 
 .categorie-tags li {
   background: white;
-  color: #36b37f;
+  color: var(--color-primary);
   font-size: 12px;
   padding: 1em 0.5em;
   margin: 1em 0.5em;
