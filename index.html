@@ -18,8 +18,30 @@
                     Logo
                 </h3>
             </a>
-            <nav>
+            <button type="button" class="menu-btn">
               <img src="./img/uni.svg" alt="menu link">
+            </button>
+            <nav class="header-nav-mobile hidden">
+                <button type="button" class="btn-close-nav">
+                    <img src="./img/cancel-ic.svg" alt="cancel icon">
+                </button>
+                <ul>
+                    <li>
+                        <a href="#works-id" class="link-portfolio">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about-myself-id" class="link-about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#footer-container-id" class="link-contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -79,7 +101,7 @@
         </div>
     </section>
     <section>
-        <div class="works">
+        <div class="works" id="works-id">
             <h1>My Recent Works</h1>
             <article class="card-work">
                 <div class="card-image">
@@ -185,7 +207,7 @@
             </article>
         </div>
     </section>
-    <section class="container-flex about-myself">
+    <section class="container-flex about-myself" id="about-myself-id">
         <div class="container">
             <h1>About me</h1>
             <p>
@@ -251,8 +273,7 @@
             </li>
         </ul>
     </section>
-    <footer class="footer-container">
-        <div class="footer-form">
+    <footer class="footer-container" id="footer-container-id">
             <h1 class="footer-title">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h1>
@@ -282,7 +303,7 @@
                     </li>
                 </ul>
             </form>
-        </div>
+        
         <ul class="social-media">
             <li>
                 <a href="">
@@ -312,8 +333,9 @@
                 </a>
             </li>
         </ul>
-        <a href="wwww.gmail.com">ameerhamza.khalid1997@gmail.com</a>
+        <a href="wwww.gmail.com" class="link-mail">ameerhamza.khalid1997@gmail.com</a>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
