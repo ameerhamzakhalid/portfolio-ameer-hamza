@@ -304,6 +304,7 @@ button:active {
   margin: 0 0.5em;
   border-radius: 2px;
 }
+
 .card-work-details-mobile {
   display: grid;
   padding: 16px;
@@ -398,7 +399,6 @@ button:active {
   margin-left: 1.3em;
 }
 
-
 @media (min-width: 800px) {
   .works {
     grid-template-columns: 1fr 1fr;
@@ -470,7 +470,6 @@ button:active {
     margin-bottom: 4em;
   }
 }
-
 
 @media (min-width: 1150px) {
   .works {

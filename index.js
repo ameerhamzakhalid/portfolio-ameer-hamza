@@ -31,7 +31,6 @@ linkContact.addEventListener('click', () => {
   menuBtn.classList.remove('hidden');
 });
 
-
 const dataCards = [
   {
     id: 0,
@@ -177,7 +176,7 @@ const cardWorkDetailsMobile = (index) => `
   </article>
   `;
 
-for (let i = 0; i < arrayBtnPopup.length; i++) {
+for (let i = 0; i < arrayBtnPopup.length; i += 1) {
   arrayBtnPopup[i].addEventListener('click', () => {
     document.body.innerHTML = cardWorkDetailsMobile(i);
     const btnCloseDetailsMobile = document.querySelector('.btn-close-details');
