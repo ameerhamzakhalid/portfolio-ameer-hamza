@@ -34,7 +34,7 @@ linkContact.addEventListener('click', () => {
 const dataCards = [
   {
     id: 0,
-    url: './img/pop-img.png',
+    url: './img/popimg.svg',
     title: 'Keeping track of hundreds of components',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
@@ -145,7 +145,7 @@ const dataCards = [
 const cardWorkDetailsMobile = (index) => `
   <article class="card-work-details-mobile">
           <button type="button" class="btn-close-details">
-          <img src="./img/live-ic.svg" alt="see live icon">
+          <img src="./img/vector.png" alt="close icon">
           </button>
           <div class="card-image-details-mobile">
               <img src=${dataCards[index].url} alt="Medical illustration sets">
@@ -180,7 +180,7 @@ for (let i = 0; i < arrayBtnPopup.length; i += 1) {
   arrayBtnPopup[i].addEventListener('click', () => {
     document.body.innerHTML = cardWorkDetailsMobile(i);
     const btnCloseDetailsMobile = document.querySelector('.btn-close-details');
-    btnCloseDetailsMobile.addEventListener('click', async () => {
+    btnCloseDetailsMobile.addEventListener('click', () => {
       window.location.reload();
     });
   });
