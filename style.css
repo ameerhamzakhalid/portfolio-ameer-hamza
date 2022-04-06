@@ -307,12 +307,17 @@ button:active {
 
 .card-work-details-mobile {
   display: grid;
-  padding: 16px;
   font-size: 16px;
   background: #fff;
   border: 20px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 16px;
+  padding: 20px 20px;
+}
+
+.btn-close {
+  width: 35px;
+  height: 35px;
 }
 
 .btn-close-details {
@@ -435,6 +440,7 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 60px;
     grid-template-rows: 60px repeat(5, auto);
+    margin: 50px 150px;
   }
 
   .btn-close-details {
