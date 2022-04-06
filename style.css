@@ -330,8 +330,9 @@ button:active {
 
 .card-image-details-mobile > img {
   width: 100%;
-  min-height: 220px;
+  height: auto;
   object-fit: cover;
+  text-align: center;
 }
 
 .card-title-mobile {
