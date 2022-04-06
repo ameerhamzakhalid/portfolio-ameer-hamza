@@ -144,9 +144,13 @@ const dataCards = [
 
 const cardWorkDetailsMobile = (index) => `
   <article class="card-work-details-mobile">
-          <button type="button" class="btn-close-details">
-          <img src="./img/cancel-ic.svg" alt="close icon">
-          </button>
+
+    <div class="btn-close" >
+    <button type="button" class="btn-close-details">
+    <img src="./img/cancel-ic.svg" alt="close icon">
+    </button>
+    </div>
+
           <div class="card-image-details-mobile">
               <img src=${dataCards[index].url} alt="Medical illustration sets">
           </div>
