@@ -26,7 +26,14 @@ screenTest(mediaqueryList);
 
 mediaqueryList.addListener(screenTest);
 
-let inputData = {};
+let inputData = {
+  fullName: document.getElementById('fullName').value,
+  firstName: document.getElementById('fullName').value,
+  lastName: document.getElementById('fullName').value,
+  email: document.getElementById('email').value,
+  message: document.getElementById('textArea').value,
+
+};
 if (localStorage.savedForm) {
   inputData = JSON.parse(localStorage.getItem('savedForm'));
 }
