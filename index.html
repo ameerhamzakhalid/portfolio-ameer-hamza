@@ -281,14 +281,14 @@
             <form action="https://formspree.io/f/xzbovlzk" method="post"  class="form-input">
                 <ul class="form-fields">
                 <li class="input-name">
-                <input type="text" name="first_name" id="first_name" maxlength="30" placeholder="First name" required>
+                <input type="text" name="first_name" id="first_name" maxlength="30" placeholder="First name" required oninput="SaveLocalStorage()">
                 </li>
                 <li class="input-email-li">
-                <input class="input-email" type="email" name="email" id="email" placeholder="Email address" required>
+                <input class="input-email" type="email" name="email" id="email" placeholder="Email address" required oninput="SaveLocalStorage()"> 
                 </li>
                 <li>
              <textarea name="text_area" id="text_area" cols="30" rows="10" maxlength="500"
-                            placeholder="Enter text here" required></textarea>
+                            placeholder="Enter text here" required oninput="SaveLocalStorage()"></textarea>
                 </li>
                 <li class="submit-button">
                         <button type="submit">
