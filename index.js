@@ -6,27 +6,47 @@ const linkAbout = document.querySelector('.link-about');
 const linkContact = document.querySelector('.link-contact');
 const arrayBtnPopup = document.querySelectorAll('.btn-popup');
 const form = document.querySelector('.form-input');
-const [fullName, firstName, lastName] = form.elements;
+const [firstName, email, textArea] = form.elements;
+let inputData = {
+  firstName: document.getElementById('user-name').value,
+  email: document.getElementById('email').value,
+  textArea: document.getElementById('textArea').value,
+};
+if (localStorage.savedForm) {
+  inputData = JSON.parse(localStorage.getItem('savedForm'));
+}
 
-const mediaqueryList = window.matchMedia('(max-width: 768px)');
+firstName.addEventListener('change', () => {
+  inputData.firstName = firstName.value;
+});
 
-const screenTest = (e) => {
-  if (e.matches) {
-    fullName.required = true;
-    firstName.required = false;
-    lastName.required = false;
-  } else {
-    fullName.removeAttribute('required');
-    firstName.required = true;
-    lastName.required = true;
+email.addEventListener('change', () => {
+  inputData.email = email.value;
+});
+
+textArea.addEventListener('change', () => {
+  inputData.textArea = textArea.value;
+});
+
+const fillDataInput = () => {
+  if (inputData.firstName) {
+    firstName.value = inputData.firstName;
+  }
+  if (inputData.email) {
+    email.value = inputData.email;
+  }
+  if (inputData.textArea) {
+    textArea.value = inputData.textArea;
   }
 };
 
-screenTest(mediaqueryList);
+const populateFields = () => {
+  localStorage.setItem('savedForm', JSON.stringify(inputData));
+  fillDataInput();
+};
+populateFields();
+form.onchange = populateFields;
 
-mediaqueryList.addListener(screenTest);
-
-const { email } = form.elements;
 const errMsgEmail = document.querySelector('small');
 
 menuBtn.addEventListener('click', () => {
