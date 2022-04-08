@@ -6,47 +6,14 @@ const linkAbout = document.querySelector('.link-about');
 const linkContact = document.querySelector('.link-contact');
 const arrayBtnPopup = document.querySelectorAll('.btn-popup');
 const form = document.querySelector('.form-input');
-const [fullName, firstName, lastName, email, textArea] = form.elements;
-
-const mediaqueryList = window.matchMedia('(max-width: 768px)');
-
-const screenTest = (e) => {
-  if (e.matches) {
-    fullName.required = true;
-    firstName.required = false;
-    lastName.required = false;
-  } else {
-    fullName.removeAttribute('required');
-    firstName.required = true;
-    lastName.required = true;
-  }
-};
-
-screenTest(mediaqueryList);
-
-mediaqueryList.addListener(screenTest);
-let inputData = {
-  fullName: document.getElementById('fullName').value,
-  firstName: document.getElementById('fullName').value,
-  lastName: document.getElementById('fullName').value,
-  email: document.getElementById('email').value,
-  message: document.getElementById('textArea').value,
-
-};
+const [firstName, email, textArea] = form.elements;
+let inputData = {};
 if (localStorage.savedForm) {
   inputData = JSON.parse(localStorage.getItem('savedForm'));
 }
 
-fullName.addEventListener('change', () => {
-  inputData.fullName = fullName.value;
-});
-
 firstName.addEventListener('change', () => {
   inputData.firstName = firstName.value;
-});
-
-lastName.addEventListener('change', () => {
-  inputData.lastName = lastName.value;
 });
 
 email.addEventListener('change', () => {
@@ -56,15 +23,10 @@ email.addEventListener('change', () => {
 textArea.addEventListener('change', () => {
   inputData.textArea = textArea.value;
 });
+
 const fillDataInput = () => {
-  if (inputData.fullName) {
-    fullName.value = inputData.fullName;
-  }
   if (inputData.firstName) {
     firstName.value = inputData.firstName;
-  }
-  if (inputData.lastName) {
-    lastName.value = inputData.lastName;
   }
   if (inputData.email) {
     email.value = inputData.email;
@@ -80,6 +42,7 @@ const populateFields = () => {
 };
 populateFields();
 form.onchange = populateFields;
+
 const errMsgEmail = document.querySelector('small');
 
 menuBtn.addEventListener('click', () => {
