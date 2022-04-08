@@ -25,8 +25,6 @@ const screenTest = (e) => {
 screenTest(mediaqueryList);
 
 mediaqueryList.addListener(screenTest);
-function SaveLocalStorage()
-{
 let inputData = {
   fullName: document.getElementById('fullName').value,
   firstName: document.getElementById('fullName').value,
@@ -58,7 +56,6 @@ email.addEventListener('change', () => {
 textArea.addEventListener('change', () => {
   inputData.textArea = textArea.value;
 });
-}
 const fillDataInput = () => {
   if (inputData.fullName) {
     fullName.value = inputData.fullName;
