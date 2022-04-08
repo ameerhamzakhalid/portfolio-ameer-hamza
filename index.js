@@ -7,7 +7,11 @@ const linkContact = document.querySelector('.link-contact');
 const arrayBtnPopup = document.querySelectorAll('.btn-popup');
 const form = document.querySelector('.form-input');
 const [firstName, email, textArea] = form.elements;
-let inputData = {};
+let inputData = {
+  firstName: document.getElementById('user-name').value,
+  email: document.getElementById('email').value,
+  textArea: document.getElementById('textArea').value,
+};
 if (localStorage.savedForm) {
   inputData = JSON.parse(localStorage.getItem('savedForm'));
 }
